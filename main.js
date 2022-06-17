@@ -19,8 +19,6 @@ function setup() {
     canvas.mouseReleased(classifyCanvas);
 }
 
-
-
 function updateCanvas() {
   background('white');
   random_no = Math.floor((Math.random()*array_1.length)+1);
@@ -31,7 +29,7 @@ function updateCanvas() {
 
 function draw() {
   // Set stroke weight to 10
-  strokeWeight(13);
+  strokeWeight(10);
   // Set stroke color to black
   stroke(0);
   // If mouse is pressed, draw line between previous and current mouse positions
@@ -71,7 +69,7 @@ function check_sketch()
   timer_counter=timer_counter+1;
   document.getElementById('timer').innerHTML = 'Timer: ' + timer_counter;
   console.log(timer_counter)
-  if(timer_counter > 720)
+  if(timer_counter > 420)
     {
       timer_counter = 0;
       timer_check = "completed"
